@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dirt Bike Mastery: Dirt Bike Maintenance Essentials</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Dirt Bike Mastery</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'index.html') { echo 'active'; } ?>">Home</a></li>
+          <li><a href="getting-started.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'getting-started.html') { echo 'active'; } ?>">Getting Started</a></li>
+          <li><a href="maintenance.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'maintenance.html') { echo 'active'; } ?>">Maintenance</a></li>
+          <li><a href="history.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'history.html') { echo 'active'; } ?>">History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="animated-section">
+        <h2>Basic Maintenance Checklist</h2>
+        <p>Regular maintenance is essential for keeping your dirt bike in top condition. Here's a basic checklist:</p>
+        <ul>
+          <li>Check tire pressure</li>
+          <li>Lubricate the chain</li>
+          <li>Inspect brakes</li>
+          <li>Clean and replace air filter</li>
+          <li>Check engine oil level</li>
+        </ul>
+        <img src="images/checklist.jpg" alt="Checklist">
+      </section>
+
+      <section class="animated-section">
+        <h2>Common Repairs</h2>
+        <p>Even with regular maintenance, minor repairs may be necessary. Common issues include flat tires, spark plug replacement, and brake adjustments. Learning basic repair skills can save you time and money.</p>
+        <img src="images/repair.jpg" alt="Repair">
+      </section>
+
+      <section class="animated-section">
+        <h2>Troubleshooting Tips</h2>
+        <p>If you encounter problems with your dirt bike, try these troubleshooting tips:</p>
+        <ul>
+          <li>Check for loose bolts or connections</li>
+          <li>Inspect fuel lines for leaks</li>
+          <li>Consult your owner's manual for troubleshooting guides</li>
+        </ul>
+        <img src="images/troubleshooting.jpg" alt="Troubleshooting">
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Back to Homepage</a></p>
+    </footer>
+  </body>
+</html>

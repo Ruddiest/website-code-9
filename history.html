@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dirt Bike Mastery: A History of Dirt Bikes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Dirt Bike Mastery</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'index.html') { echo 'active'; } ?>">Home</a></li>
+          <li><a href="getting-started.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'getting-started.html') { echo 'active'; } ?>">Getting Started</a></li>
+          <li><a href="maintenance.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'maintenance.html') { echo 'active'; } ?>">Maintenance</a></li>
+          <li><a href="history.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'history.html') { echo 'active'; } ?>">History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="animated-section">
+        <h2>The Evolution of Off-Road Machines</h2>
+        <p>Dirt bikes have evolved significantly since their inception. Early models were heavy and underpowered, but advancements in technology have led to lighter, more powerful machines. The sport of motocross has also played a significant role in the development of dirt bikes.</p>
+        <img src="images/evolution.jpg" alt="Evolution">
+      </section>
+
+      <section class="animated-section">
+        <h2>Iconic Dirt Bike Models</h2>
+        <p>Over the years, several iconic dirt bike models have made a lasting impact on the sport. Some notable examples include the Honda CR250, Yamaha YZ250, Kawasaki KX250, and Suzuki RM250. These models have set the standard for performance and innovation.</p>
+        <img src="images/models.jpg" alt="Models">
+      </section>
+
+      <section class="animated-section">
+        <h2>The Rise of Motocross</h2>
+        <p>Motocross, a competitive sport involving riding dirt bikes on a challenging track, has gained immense popularity. The sport has produced legendary riders and showcased the incredible capabilities of dirt bikes.</p>
+        <img src="images/motocross.jpg" alt="Motocross">
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Back to Homepage</a></p>
+    </footer>
+  </body>
+</html>

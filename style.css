@@ -1,0 +1,118 @@
+body {
+  font-family: "Roboto", sans-serif; /* Use a modern font like Roboto */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #202020; /* Darker header color */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+main {
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #202020;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Animation */
+.animated-section {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards; /* Add 'forwards' to ensure the animation stays */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Active link */
+.nav-link.active {
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+  
+  /* skibbity image gallery*/
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    position: relative; /* Add position: relative */
+  }
+
+  .gallery-image.active {
+    transform: translateX(-100%);
+    z-index: 1; /* Add z-index: 1 */
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dirt Bike Mastery: Getting Started with Dirt Bikes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Dirt Bike Mastery</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'index.html') { echo 'active'; } ?>">Home</a></li>
+          <li><a href="getting-started.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'getting-started.html') { echo 'active'; } ?>">Getting Started</a></li>
+          <li><a href="maintenance.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'maintenance.html') { echo 'active'; } ?>">Maintenance</a></li>
+          <li><a href="history.html" class="<?php if (basename($_SERVER['PHP_SELF']) == 'history.html') { echo 'active'; } ?>">History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="animated-section">
+        <h2>Choosing the Right Bike</h2>
+        <p>Selecting the right dirt bike is crucial for your riding experience. Consider factors such as your riding style, experience level, and budget. Beginners might opt for a smaller, lighter bike, while experienced riders may prefer a larger, more powerful machine. Popular dirt bike categories include motocross bikes, enduro bikes, and trail bikes.</p>
+        <img src="images/bike1.jpg" alt="Bike 1">
+      </section>
+
+      <section class="animated-section">
+        <h2>Gearing Up for Safety</h2>
+        <p>Safety is paramount when riding a dirt bike. Invest in high-quality protective gear, including a helmet, chest protector, boots, gloves, and knee and elbow pads. Consider the terrain and weather conditions when choosing your gear.</p>
+        <img src="images/helmet.jpg" alt="Helmet">
+      </section>
+
+      <section class="animated-section">
+        <h2>Essential Riding Techniques</h2>
+        <p>Mastering essential riding techniques will improve your control and safety. Practice braking, shifting, cornering, and jumping in a controlled environment. Consider taking a dirt bike riding course for professional guidance.</p>
+        <img src="images/riding.jpg" alt="Riding">
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Back to Homepage</a></p>
+    </footer>
+  </body>
+</html>
